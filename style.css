@@ -1,0 +1,292 @@
+/* Reset e base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .libre-caslon-text-bold {
+    font-family: "Libre Caslon Text", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .libre-caslon-text-regular-italic {
+    font-family: "Libre Caslon Text", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 16px;
+    background-color: #fdfdfd;
+    color: #333;
+    line-height: 1.6;
+    transition: all 0.3s ease-in-out;
+    padding: 10px;
+  }
+  
+  /* Contraste alto */
+  body.contraste {
+    background-color: #000 !important;
+    color: #ff0 !important;
+  }
+  
+  body.contraste header,
+  body.contraste footer {
+    background-color: #111 !important;
+    color: #ff0 !important;
+  }
+  
+  /* Container */
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 10px;
+    align-items: center;
+  }
+  
+  /* Header */
+  header {
+    background: #fff0f5;
+    border-bottom: 2px solid #e6e6e6;
+    padding: 15px 0;
+    margin-bottom: 20px;
+    align-items: center;
+  }
+  header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  header h1 {
+    font-size: 40px;
+    color: #d63384;
+  }
+  
+  nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 20px;
+    margin-top: 10px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+  }
+  
+  nav a:hover {
+    color: #d63384;
+  }
+  
+  /* Botões de acessibilidade */
+  .acessibilidade {
+    position: fixed;
+    top: 100px;
+    left: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 9999;
+  }
+  
+  .acessibilidade button {
+    background-color: #d63384;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .acessibilidade button:hover {
+    background-color: #b02a6c;
+  }
+  
+  /* Hero */
+  .hero {
+    text-align: center;
+    background: #fff5fa;
+    padding: 40px 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+  }
+  
+  .hero h2 {
+    font-size: 24px;
+    color: #b30059;
+  }
+  
+  .hero p {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  
+  /* Produtos */
+  .produtos h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .card {
+    background: #ffffff;
+    border: 1px solid #eaeaea;
+    border-radius: 10px;
+    padding: 15px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  }
+  
+  .card img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  /* Sobre */
+  .sobre, .contato {
+    background: #fffafc;
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 30px;
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  }
+  
+  .contato form {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .contato form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .contato form div {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 250px;
+  }
+  
+  .contato form button {
+    flex-basis: 100%;
+    max-width: 200px;
+    align-self: center;
+  }
+  .contato form input,
+.contato form textarea {
+  padding: 15px;
+  border: 2px solid #d63384;
+  border-radius: 10px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #fffafc;
+}
+
+.contato form textarea {
+  height: 150px;
+  resize: vertical;
+}
+.container-contato {
+  background-color: #ffe4ec; /* rosa claro */
+  border: 2px solid #f8b6c5; /* rosa mais forte */
+  border-radius: 15px;
+  padding: 40px 20px;
+  margin: 30px auto;
+  max-width: 900px;
+  box-shadow: 0 4px 8px rgba(214, 51, 132, 0.1);
+}
+
+
+  
+  
+  form button {
+    margin-top: 15px;
+    background: #d63384;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background: #c2185b;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background: #fff0f5;
+    margin-top: 40px;
+    border-radius: 10px;
+  }
+
+  .card img {
+    width: 100%;
+    height: 200px; /* ou o valor que preferir */
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .botoes-opcoes {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .opcoes-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+  }
+  
+  .botao-opcao {
+    padding: 15px 25px;
+    background-color: #fff0f5; /* Rosa bem claro no fundo */
+    border: 2px solid #ff69b4; /* Rosa para a borda */
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    color: #c71585; /* Rosa escuro para o texto */
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  }
+  
+  .botao-opcao:hover {
+    background-color: #ff69b4;
+    color: white;
+    border-color: #c71585;
+  }
+  
+  

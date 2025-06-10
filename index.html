@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nuance Comestics</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,700;1,400&display=swap');
+    </style>
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      
+      <header>
+        <div class="container">
+          <h1 class="libre-caslon-text-bold">Nuance Comestics</h1>
+        </div>
+      </header>
+      <nav>
+        <ul>
+          <li><a href="#home">Início</a></li>
+          <li><a href="#produtos">Produtos</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+      <div class="acessibilidade">
+        <button onclick="aumentarFonte()">A+</button>
+        <button onclick="diminuirFonte()">A-</button>
+        <button onclick="alternarContraste()">Contraste</button>
+        <button onclick="lerTexto()">🔊</button>
+        <button onclick="ativarReconhecimento()">🎤</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <h2>Realce sua beleza com inclusão</h2>
+      <p>Produtos de qualidade, acessíveis para todos os estilos e necessidades.</p>
+    </section>
+<br>
+    <section id="produtos" class="produtos">
+      <h2>Nossos Produtos</h2>
+      <div class="grid">
+        <div class="card">
+          <img src="eudora.webp" alt="Batom vermelho matte" />
+          <h3>Eudora Glam Microplastia Vermelho Ruby</h3>
+          <p>Acabamento matte e longa duração.</p>
+        </div>
+        <div class="card">
+          <img src="creme.webp" alt="Creme facial para hidratação" />
+          <h3>La Roche-Posay - Creme Facial</h3>
+          <p>Hidratação profunda por 24h.</p>
+        </div>
+        <div class="card">
+          <img src="coach_floral-4.webp" alt="Perfume com aroma floral" />
+          <h3>Perfume Coach Floral EDP Feminino</h3>
+          <p>Fragrância suave e sofisticada.</p>
+        </div>
+        <div class="card">
+          <img src="kit.webp" alt="Kit Skincare Antioleosidade e Antiacne" />
+          <h3>Creamy  - Kit Skincare Antioleosidade e Antiacne</h3>
+          <p>Seu ritual diário contra acne com frescor, leveza e equilíbrio.</p>
+        </div>
+        <div class="card">
+          <img src="sabonete.webp" alt="Emulsão para limpeza da pele" />
+          <h3>Creamy - Emulsão para Limpeza</h3>
+          <p>Limpeza com surfactantes suaves e ingredientes hidratantes.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="produtos" class="produtos">
+      <div class="grid">
+        <div class="card">
+          <img src="jimmy.webp" alt="Batom vermelho matte" />
+          <h3>I Want Choo Jimmy Choo Eau de Parfum </h3>
+          <p>Aroma alegria e com um toque sedutor.</p>
+        </div>
+        <div class="card">
+          <img src="kerastase.webp" alt="Creme facial para hidratação" />
+          <h3>Kit Kérastase Gloss Absolu Squad </h3>
+          <p>Proporciona um tratamento antifrizz completo.</p>
+        </div>
+        <div class="card">
+          <img src="oleo kerastase.webp" alt="Perfume com aroma floral" />
+          <h3>Kérastase Elixir Ultime Rose </h3>
+          <p>Óleo nutritivo para cabelos sem brilho.</p>
+        </div>
+        <div class="card">
+          <img src="loreal.webp" alt="Kit Skincare Antioleosidade e Antiacne" />
+          <h3>L'Oréal Professionnel Serie Expert Absolut Repair Gold Quinoa </h3>
+          <p>Proporciona 10 benefícios para os fios.</p>
+        </div>
+        <div class="card">
+          <img src="la roche.webp" alt="Emulsão para limpeza da pele" />
+          <h3>La Roche-Posay Pure Vitamin C12 </h3>
+          <p>Sérum facial redutor de linhas para peles mistas à oleosas.</p>
+          
+        </div>
+      </div>
+    </section>
+
+    <section class="botoes-opcoes">
+      <div class="opcoes-container">
+        <button class="botao-opcao">Descontos</button>
+        <button class="botao-opcao">Promoções</button>
+        <button class="botao-opcao">Outlets</button>
+        <button class="botao-opcao">Presentes</button>
+        <button class="botao-opcao">Lançamentos</button>
+      </div>
+    </section>
+    
+
+    <section id="sobre" class="sobre">
+      <h2>Sobre Nós</h2>
+      <p>Somos uma marca preocupada com a beleza e inclusão. Nossos produtos são pensados para todos os tipos de pessoas, com responsabilidade social e ambiental.</p>
+    </section>
+
+    <section id="contato" class="contato container-contato">
+      <h2>Fale Conosco</h2>
+      <form>
+        <div>
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" aria-label="Campo para nome" />
+        </div>
+        <div>
+          <label for="mensagem">Mensagem:</label>
+          <textarea id="mensagem" aria-label="Campo para mensagem"></textarea>
+        </div>  
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+    
+
+  <footer>
+    <p>&copy; 2025 Beleza Inclusiva. Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- VLibras -->
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>new window.VLibras.Widget('https://vlibras.gov.br/app');</script>
+</body>
+</html>
